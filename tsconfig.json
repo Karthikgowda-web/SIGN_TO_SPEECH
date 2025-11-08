@@ -1,0 +1,45 @@
+
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* ESM Browser / Node module resolution for types */
+    "moduleResolution": "node",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+
+    /* Path aliases for ESM Browser (for types only, runtime uses importmap) */
+    "baseUrl": "./",
+    "paths": {
+      "react": ["./node_modules/react"],
+      "react-dom": ["./node_modules/react-dom"],
+      "framer-motion": ["./node_modules/framer-motion"],
+      "@google/genai": ["./node_modules/@google/genai"]
+    }
+  },
+  "include": [
+    "index.tsx",
+    "App.tsx",
+    "components",
+    "contexts",
+    "services",
+    "types.ts",
+    "constants.ts",
+    "tailwind.config.js",
+    "postcss.config.js"
+  ],
+  "exclude": ["node_modules", "dist"]
+}

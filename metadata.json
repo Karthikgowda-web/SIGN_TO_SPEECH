@@ -1,0 +1,8 @@
+{
+  "name": "Universal Sign & Speech Communication System",
+  "description": "A web application that facilitates communication between sign language users and speech users through real-time conversion of sign-to-speech and speech-to-sign.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
